@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <style>
+    body {
+      display: block;
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+    }
+    h1 {
+      color: #535b73;
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: lighter;
+    }
+
+    ul {
+      list-style: none;
+      font-weight: lighter;
+      padding: 0;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    li {
+      padding: 0 0 30px;
+      transition: all 200ms ease-in-out;
+    }
+    li:hover {
+      display: block;
+      background-color: rgba(166, 159, 165, 0.2);
+    }
+    button {
+      color: #ffffff;
+      background-color: #a69fa5;
+      display: block;
+      margin: 20px auto;
+      padding: 15px 20px;
+      border: 1px solid #a69fa5;
+      border-radius: 30px;
+      box-shadow: 2px 5px 5px #a69fa5;
+      font-size: 16px;
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      background-color: #535b73;
+    }
+  </style>
+  <body>
+    <h1>
+      ⛅️
+      <br />
+      Currently 21° in Tokyo
+    </h1>
+    <h2>
+      13° /
+      <strong> 23°</strong>
+    </h2>
+    <br />
+    <ul>
+      <li>
+        <h3>🌨️ Tomorrow</h3>
+        <p>
+          10° /
+          <strong>22°</strong>
+        </p>
+      </li>
+      <li>
+        <h3>🌥️ Saturday</h3>
+        <p>
+          15° /
+          <strong>17°</strong>
+        </p>
+      </li>
+      <li>
+        <h3>☀️ Sunday</h3>
+        <p>
+          25° /
+          <strong>28°</strong>
+        </p>
+      </li>
+    </ul>
+    <button>Change City</button>
+    <p>Coded by Ali Bird</p>
+    <script>
+      function askQuestion() {
+        let city = prompt("What city do you live in?");
+        let temp = prompt("What temperature is it outside?");
+        let emoji = document.querySelector("h1");
+        if (temp > 0) {
+          emoji.innerHTML = `🌻 <br /> Currently ${temp}° in ${city}.`;
+        } else {
+          emoji.innerHTML = `❄️ <br /> Currently ${temp}° in ${city}.`;
+        }
+      }
+
+      let changeCity = document.querySelector("button");
+      changeCity.addEventListener("click", askQuestion);
+    </script>
+  </body>
+</html>

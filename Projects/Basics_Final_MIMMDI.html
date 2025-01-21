@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Intuition Made Me Do It</title>
+    <style> 
+        body {
+      font-family: "Courier New", Courier, monospace;
+      background-color: #f5f0fe;
+      color:#f5f0fe
+        }
+      .outerBox{
+        padding: 50px 100px ;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        background-color: #535B73;
+        max-width: 600px;
+        border-radius:  10px;
+
+      }
+     a{
+        font-size:30px;
+        color: #f5f0fe;
+        text-decoration: none;;
+        transition: all 200ms ease-in-out;
+      }
+     a:visited{
+        color: #f5f0fe;
+    }
+    a:hover {
+        text-decoration: underline;;
+    }
+   
+    h2{
+        font-weight:normal;
+    }
+    span{
+        margin: 50px;
+        text-decoration: underline;
+    }
+    p{
+        line-height: 1.5;
+    }
+    button{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #f5f0fe, #535b73);
+        color:#535B73;
+        text-decoration:none;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        box-shadow: 2px 5px 5px #f5f0fe;
+        transition: all 200ms ease-in-out;
+    }
+    button:hover {
+        color:#f5f0fe;
+        background: linear-gradient(45deg, #535b73, #f5f0fe);
+        transition: all 200ms ease-in-out;
+    }
+  </style>
+  </head>
+  <body>
+    <div class = "outerBox"
+   <h1>
+    <a href = "https://a.co/d/1IPuguv" target = "blank:"
+        <strong>
+        My Intuition Made Me Do It
+        </strong>
+    </a>
+    </h1>
+    <h2>Author A. K. Bird</h2>
+    <img
+        src= "https://authorakbird.com/cdn/shop/files/kvmvk9w-front-shortedge-384.jpg?v=1724911904&width=1070"
+        alt = "Book Titled 'My Intuition Made Me Do It' in gold letters with a purple background and a gemstone-like butterfly on the cover."
+        width = 300px
+     </img>
+     <hr />
+     <span>  Women's Fiction</span>
+     <span>  Roman a Clef</span>
+    <hr />
+    <p>
+    A story of <em>'Girl Finds Self'</em>, this tale takes a reader deep into the experience of finding one's higher calling and overcoming the challenge of loving and letting go.
+    <br />
+    <br />
+    This Journey will resonate with those who are finding their way to the finish line of a dead-end relationship. For those who are uncovering their calling and purpose. For those who are interested in Spirituality and believe that our reality can offer us more than our imaginations could dream of for ourselves.
+    </p>
+    <button>
+        Tell Me More!
+    </button>
+    <br />
+    <br />
+    <h2>
+        Coded by Ali Bird
+    </h2>
+</div>
+<script>
+    function read(){
+    let books = prompt ("Do you like to read?").toLowerCase()
+    if (books ==="yes" || books === "yeah" || books=== "ya"|| books === "yea" || books=== "y"){
+        alert("I think you're going to like this page!");
+    } else{
+        alert("Maybe you could be convinced  ")
+    }
+}
+    read();
+
+    function learnMore(){
+        let name = prompt("What is your name?")
+        alert (`I'm happy you're interested, ${name}! 
+
+Here's the Synopsis:
+        
+'Within the drumbeat of a Shamanic Journey, Hallie B. Wright experiences visions cryptically promising a destined future. With her relationship unravelling faster than she can mend it, the condition of this karmic fate is unsurprising: You, alone. A message from Spirit, urging a breakup against all Hallie's hopes and dreams.
+
+Cosmic influences conspire to course-correct her path as Hallie navigates an overwhelming decision; save her relationship or face a reality she cannot yet comprehend. Serendipitous tarot readings and a yoga festival in the mountains provides keys to uncovering her promised calling.
+
+Can she withstand the emotional tides guiding her to follow her intuition into the unknown? Or will her relationship rise and anchor her to stay? The whispers of her soul will uncover her story- whether she chooses to listen, or not.' 
+
+If you'd like a copy, there's a link in the title!`)
+    
+
+}
+
+    let clickButton = document.querySelector("button")
+    clickButton.addEventListener("click", learnMore)
+</script>
+</body>
+</html>
