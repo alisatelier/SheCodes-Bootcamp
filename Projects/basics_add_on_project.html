@@ -6,6 +6,19 @@
     <title>✨ The Spirit Atelier ✨</title>
   </head>
   <style>
+    .light {
+      background-color: white;
+      background-image: linear-gradient(
+        90deg,
+        transparent 50%,
+        rgba(242, 233, 233, 0.5) 50%
+      );
+      background-size: 50px 50px;
+    }
+    .light .container {
+      background-color: white;
+      color: #8b8089;
+    }
     body {
       background-color: whitesmoke;
       font-family: "Courier New", Courier, monospace;
@@ -20,29 +33,17 @@
       max-width: 600px;
       border-radius: 10px;
     }
-    img {
-      max-width: 100%;
-    }
-    button {
-      font-family: sans-serif;
-      padding: 10px 20px;
-      background: #f2e9e9;
-      color: #535b73;
-      text-decoration: none;
-      border: solid 1px;
-      border-radius: 10px;
-      font-size: 20px;
-      transition: all 200ms ease-in-out;
-    }
+
     .left {
       font-family: sans-serif;
       padding: 10px 20px;
-      background: #f2e9e9;
+      background-color: #f2e9e9;
       color: #8b8089;
       text-decoration: none;
-      border-radius: 10px;
+      border: solid 0.5px;
       border-color: #8b8089;
-      font-size: 20px;
+      border-radius: 10px;
+      font-size: 16px;
       transition: all 200ms ease-in-out;
     }
     .left:hover {
@@ -53,8 +54,21 @@
       text-decoration: none;
       border: none;
       border-radius: 10px;
-      font-size: 20px;
       transition: all 200ms ease-in-out;
+    }
+    .lightButton {
+      background: #535b73;
+      color: whitesmoke;
+    }
+    .lightButton:hover {
+      background: #f2e9e9;
+      color: #8b8089;
+      transition: all 200ms ease-in-out;
+      border: solid 1px;
+      border-color: #8b8089;
+    }
+    img {
+      max-width: 100%;
     }
     .centerPhoto {
       border-radius: 10px;
@@ -68,11 +82,15 @@
       font-weight: normal;
     }
     h2 {
-      font-size: 30px;
+      font-weight: normal;
+      font-size: 40px;
     }
     p {
       font-size: 16px;
       line-height: 1.5;
+    }
+    footer {
+      font-size: 10px;
     }
     .grid {
       display: grid;
@@ -83,13 +101,6 @@
     .grid img {
       width: 100%;
       border-radius: 10px;
-    }
-    .light {
-      background-color: #f2e9e9;
-    }
-    .light .container {
-      background-color: white;
-      color: #8b8089;
     }
   </style>
   <body>
@@ -122,7 +133,7 @@
       <p>
         Curated wares to serve you on your own Spiritual Journey.
         <br />
-        Handcrafted and designed by the Author herself, these tools are here for
+        Handcrafted and designed by Ali Bird herself, these tools are here for
         you to support you on your path.
         <br />
         <br />
@@ -130,9 +141,7 @@
         Metal Norse Runes are available in the shop.
         <br />
         <br />
-        Please feel welcome to reach out if you have any questions, otherwise
-        take some time to browse the shop and see if there is an offering
-        calling your name!
+        Launching March 1st.
         <br />
       </p>
       <br />
@@ -143,7 +152,15 @@
     <script>
       function changeTheme() {
         let body = document.querySelector("body");
+        let themeButton = document.querySelector(".left");
+
         body.classList.toggle("light");
+
+        if (body.classList.contains("light")) {
+          themeButton.classList.add("lightButton");
+        } else {
+          themeButton.classList.remove("lightButton");
+        }
       }
 
       let theme = document.querySelector(".left");
