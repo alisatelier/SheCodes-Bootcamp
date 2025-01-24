@@ -29,7 +29,7 @@
       background: #f2e9e9;
       color: #535b73;
       text-decoration: none;
-      border: none;
+      border: solid 1px;
       border-radius: 10px;
       font-size: 20px;
       transition: all 200ms ease-in-out;
@@ -40,8 +40,8 @@
       background: #f2e9e9;
       color: #8b8089;
       text-decoration: none;
-      border: none;
       border-radius: 10px;
+      border-color: #8b8089;
       font-size: 20px;
       transition: all 200ms ease-in-out;
     }
@@ -54,15 +54,21 @@
       border: none;
       border-radius: 10px;
       font-size: 20px;
-      transition: all 500ms ease-in-out;
+      transition: all 200ms ease-in-out;
     }
     .centerPhoto {
       border-radius: 10px;
-      transition: 150ms ease-in-out;
+      transition: 350ms ease-in-out;
     }
     .centerPhoto:hover {
       opacity: 0.7;
-      transform: scale(1.1);
+      transform: scale(1.06);
+    }
+    h1 {
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 30px;
     }
     p {
       font-size: 16px;
@@ -77,6 +83,13 @@
     .grid img {
       width: 100%;
       border-radius: 10px;
+    }
+    .light {
+      background-color: #f2e9e9;
+    }
+    .light .container {
+      background-color: white;
+      color: #8b8089;
     }
   </style>
   <body>
@@ -122,11 +135,19 @@
         calling your name!
         <br />
       </p>
-      <button class="centered">Learn More</button>
       <br />
       <br />
 
       <footer>Coded by Ali Bird 🌹</footer>
     </div>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("light");
+      }
+
+      let theme = document.querySelector(".left");
+      theme.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
