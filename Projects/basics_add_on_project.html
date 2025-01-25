@@ -52,7 +52,8 @@
       background: #535b73;
       color: whitesmoke;
       text-decoration: none;
-      border: none;
+      border: solid 1px;
+      border-color: #f2e9e9;
       border-radius: 10px;
       transition: all 200ms ease-in-out;
     }
@@ -104,7 +105,7 @@
     }
   </style>
   <body>
-    <button class="left">Change Theme</button>
+    <button class="left" id="left">Change Theme</button>
     <div class="container">
       <h1>Welcome to:</h1>
       <h2>The Spirit Atelier</h2>
@@ -151,19 +152,19 @@
     </div>
     <script>
       function changeTheme() {
-        let body = document.querySelector("body");
-        let themeButton = document.querySelector(".left");
+        let bodyElement = document.querySelector("body");
+        let leftButtonElement = document.querySelector("#left");
 
-        body.classList.toggle("light");
+        bodyElement.classList.toggle("light");
 
-        if (body.classList.contains("light")) {
-          themeButton.classList.add("lightButton");
+        if (bodyElement.classList.contains("light")) {
+          leftButtonElement.classList.add("lightButton");
         } else {
-          themeButton.classList.remove("lightButton");
+          leftButtonElement.classList.remove("lightButton");
         }
       }
 
-      let theme = document.querySelector(".left");
+      let theme = document.querySelector("#left");
       theme.addEventListener("click", changeTheme);
     </script>
   </body>
