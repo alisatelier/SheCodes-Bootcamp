@@ -1,0 +1,83 @@
+body {
+  font-family: poppins;
+  background-color: #f0f0fa;
+}
+
+header {
+  border-bottom: 2px, solid, #8d8db3;
+  padding-bottom: 30px;
+}
+footer {
+  border-bottom: 2px, solid, #8d8db3;
+  padding-top: 30px;
+}
+div {
+  display: block;
+}
+.appContainer {
+  background-color: white;
+  padding: 50px;
+  margin: 60px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 30px 50px #bcbce2;
+}
+
+form {
+  display: block;
+}
+.searchCity {
+  background-color: rgb(240, 240, 250);
+  border: none;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+}
+.searchButton {
+  background-color: #8d8db3;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 5px;
+}
+h1 {
+  font-size: 48px;
+  margin: 0 auto;
+}
+p {
+  color: rgb(105, 105, 105);
+  margin: 0 auto;
+}
+strong {
+  color: #9494e0;
+}
+.currentWeather {
+  display: flex;
+  justify-content: space-between;
+}
+.currentTemp {
+  padding-top: 10px;
+}
+.currentTempIcon {
+  font-size: 48px;
+  position: relative;
+  bottom: 10px;
+}
+.currentTempValue {
+  font-size: 80px;
+  position: relative;
+}
+.currentTempUnit {
+  font-size: 30px;
+  font-weight: thin;
+  position: relative;
+  top: -35px;
+}
+a {
+  color: #9494e0;
+}
+a:visited {
+  color: #8d8db3;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class = "appContainer">
+    <header>
+      <form id="city-input">
+        <input type="search" id = "search-city" placeholder="Enter a city.." required class="searchCity" />
+        <input type="submit" value="Search" class="searchButton"/>
+      </form>
+    </header>
+    <main>
+      <div class="currentWeather">
+        <div>
+          <h1>Paris</h1>
+          <p>
+            <span id= "date-now"> Tuesday 1600 </span>, moderate rain <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+          </p>
+        </div>
+        <div class=currentTemp>
+          <span class="currentTempIcon">☀️</span>
+          <span class="currentTempValue">14</span>
+            <span class="currentTempUnit">°C <span>
+        </div>
+    </div>
+    </main>
+    <footer>
+      <p>
+        This project was coded by
+        <a href="https://www.shecodes.io/graduates/159381-ali-bird" target="_blank">Ali Bird</a> and is
+        <a href="https://github.com/alisatelier" target="_blank"> on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </p>
+    </div>
+    </footer>
+    <script src = "src/index.js"></script>
+  </body>
+</html>
